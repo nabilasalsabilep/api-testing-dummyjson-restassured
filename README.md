@@ -11,9 +11,9 @@ This project demonstrates automated API testing using Java, Rest Assured, Cucumb
 
 ## 🚀 How to Run
 1. Clone the repo:
-   git clone https://github.com/yourusername/api-testing-dummyjson-restassured.git
+   git clone https://github.com/nabilasalsabilep/api-testing-dummyjson-restassured.git  
    cd api-testing-dummyjson-restassured
-2. Run tests via Maven:
+2. Run tests via Maven:  
    mvn test -DsuiteXml=restassured-cucumber_suite.xml
 
 ## ✅ Features Tested
