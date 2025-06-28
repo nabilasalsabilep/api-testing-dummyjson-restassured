@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="3.546" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-06-28T02:11:41.872486Z">
+<testcase classname="Add New Cart API" name="Simulate adding a new cart" time="1.502">
+<system-out><![CDATA[
+When Send a http "POST" request to "/auth/login" with body:.................passed
+And Save the token from the response to local storage.......................passed
+Given Make sure token in local storage not empty............................passed
+When Send a http "GET" request to "/products" with body:....................passed
+And Get first product & second product from the list of products............passed
+When Send a http "POST" request to "/carts/add" with body:..................passed
+Then The response status must be 201........................................passed
+And The response schema should be match with schema "schemas/add_new_cart_schema.json".passed
+And The user id in the response must be 1...................................passed
+And Cart id in the response must be created.................................passed
+And First product id in the response must be {id1}..........................passed
+And Title of the first product in the response must be the same as the title of the first product in the list.passed
+And Price of the first product in the response must be the same as the price of the first product in the list.passed
+And Quantity of the first product in the response must be {qty1}............passed
+And Sub total of the first product must be equal to price of the first product that calculated with quantity of the first product.passed
+And Discount percentage of the first product in the response must be the equal as the discount percentage of the first product in the list, if present.passed
+And Discounted price of the first product in the response must be equal to the calculated discounted price.passed
+And Second product id in the response must be {id2}.........................passed
+And Title of the second product in the response must be the same as the title of the second product in the list.passed
+And Price of the second product in the response must be the same as the price of the second product in the list.passed
+And Quantity of the second product in the response must be {qty2}...........passed
+And Sub total of the second product must be equal to price of the second product that calculated with quantity of the second product.passed
+And Discount percentage of the second product in the response must be the equal as the discount percentage of the second product in the list, if present.passed
+And Discounted price of the second product in the response must be equal to the calculated discounted price.passed
+And Total product in the response must be 2.................................passed
+And Total discounted price in the response must be equal to the sum of the two discounted prices.passed
+And Total quantity in the response must be equal to the sum of the quantities.passed
+And The Total in the response must be equal to the sum of the two product prices that calculated with quantity.passed
+]]></system-out>
+</testcase>
+<testcase classname="Update A Cart API" name="Simulate deleting a cart" time="0.468">
+<system-out><![CDATA[
+When Send a http "POST" request to "/auth/login" with body:.................passed
+And Save the token from the response to local storage.......................passed
+Given Make sure token in local storage not empty............................passed
+When Send a http "GET" request to "/carts" with body:.......................passed
+And Get first cart from the list of carts...................................passed
+When Send a http "DELETE" request to "/carts/{cartId}" with body:...........passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "schemas/delete_a_cart_schema.json".passed
+And The "isDeleted" field in the response must be true......................passed
+And The "deletedOn" field in the response must not be null..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get All Carts API" name="Simulate fetching all carts" time="0.303">
+<system-out><![CDATA[
+When Send a http "POST" request to "/auth/login" with body:.................passed
+And Save the token from the response to local storage.......................passed
+When Send a http "GET" request to "/carts" with body:.......................passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "schemas/get_all_carts_schema.json".passed
+And Total carts in the response should be more than or equal to 0...........passed
+And Each cart should contain userId, products, total, discountedTotal, and totalQuantity.passed
+]]></system-out>
+</testcase>
+<testcase classname="Get All Products API" name="Validate structure and contents of Get All Products response" time="0.332">
+<system-out><![CDATA[
+When Send a http "POST" request to "/auth/login" with body:.................passed
+And Save the token from the response to local storage.......................passed
+When Send a http "GET" request to "/products" with body:....................passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "schemas/get_all_products_schema.json".passed
+And The total number of products must be more than 0........................passed
+And Each product in the response must contain id, title, price, and minimumOrderQuantity.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login API" name="Simulate successful login" time="0.15">
+<system-out><![CDATA[
+When Send a http "POST" request to "/auth/login" with body:.................passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "schemas/login_schema.json".passed
+And Save the token from the response to local storage.......................passed
+And Username in the response must be "emilys"...............................passed
+And Email in the response must be "emily.johnson@x.dummyjson.com"...........passed
+And First name in the response must be "Emily"..............................passed
+And Last name in the response must be "Johnson".............................passed
+And Gender in the response must be "female".................................passed
+And Image url in the response must be "https://dummyjson.com/icon/emilys/128".passed
+]]></system-out>
+</testcase>
+<testcase classname="Update A Cart API" name="Simulate updating a cart" time="0.694">
+<system-out><![CDATA[
+When Send a http "POST" request to "/auth/login" with body:.................passed
+And Save the token from the response to local storage.......................passed
+Given Make sure token in local storage not empty............................passed
+When Send a http "GET" request to "/carts" with body:.......................passed
+And Get first cart from the list of carts...................................passed
+When Send a http "PUT" request to "/carts/{cartId}" with body:..............passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "schemas/update_a_cart_schema.json".passed
+And The user id in the response must be 1...................................passed
+And Cart id in the response must be {cartId}................................passed
+And Product id in the response must be the same as first and second product id.passed
+And Product titles of the first product in the response must not be changed.passed
+And Product prices in the response must not be changed......................passed
+And Product quantities in the response must be the same as first and second product quantities.passed
+And Total of each product must be equal to price multiplied by quantity.....passed
+And Discount percentage of each product must be equal to the calculation between the discounted price and the product sub-total, if present.passed
+And Discounted price of each product must be equal to calculated discounted total.passed
+And Total number of products in the response must be 2......................passed
+And Total quantity in the response must be equal to the sum of all product quantities.passed
+And The Total in the response must be equal to the sum of all product subtotals.passed
+And Total discounted price in the response must be equal to the sum of all product discounted prices.passed
+]]></system-out>
+</testcase>
+</testsuite>

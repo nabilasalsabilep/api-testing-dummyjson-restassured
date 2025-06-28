@@ -1,0 +1,75 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Update A Cart Response Schema",
+    "type": "object",
+    "required": [
+        "id", 
+        "products", 
+        "total", 
+        "userId", 
+        "totalProducts", 
+        "totalQuantity"
+    ],
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "products": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id", 
+            "title", 
+            "price", 
+            "quantity", 
+            "total", 
+            "thumbnail"
+        ],
+          "properties": {
+            "id": { 
+                "type": "integer" 
+            },
+            "title": { 
+                "type": "string" 
+            },
+            "price": { 
+                "type": "number" 
+            },
+            "quantity": { 
+                "type": "integer" 
+            },
+            "total": { 
+                "type": "number" 
+            },
+            "discountPercentage": { 
+                "type": ["number", "null"] 
+            },
+            "discountedPrice": { 
+                "type": ["number", "null"] 
+            },
+            "thumbnail": { 
+                "type": "string", 
+                "format": "uri" 
+            }
+          }
+        },
+        "minItems": 1
+      },
+      "total": {
+        "type": "number"
+      },
+      "discountedTotal": {
+        "type": "number"
+      },
+      "userId": {
+        "type": "integer"
+      },
+      "totalProducts": {
+        "type": "integer"
+      },
+      "totalQuantity": {
+        "type": "integer"
+      }
+    }
+}  

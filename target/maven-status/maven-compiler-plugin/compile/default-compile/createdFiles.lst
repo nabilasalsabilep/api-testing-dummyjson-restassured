@@ -1,0 +1,16 @@
+com/dummyjson/testng/program/model/ResponseModel/GetAllProductsResponse$Product.class
+com/dummyjson/testng/program/model/ResponseModel/GetAllProductsResponse.class
+com/dummyjson/testng/program/model/ResponseModel/AddNewCartResponse.class
+com/dummyjson/testng/program/model/ResponseModel/GetAllCartsResponse$Cart$Product.class
+com/dummyjson/testng/program/model/ResponseModel/AddNewCartResponse$CartProduct.class
+com/dummyjson/testng/program/model/ResponseModel/DeleteACartResponse$Product.class
+com/dummyjson/testng/program/model/ResponseModel/GetAllProductsResponse$Product$Review.class
+com/dummyjson/testng/program/model/ResponseModel/GetAllCartsResponse.class
+com/dummyjson/testng/program/model/ResponseModel/DeleteACartResponse.class
+com/dummyjson/testng/program/model/ResponseModel/UpdateACartResponse.class
+com/dummyjson/testng/program/model/ResponseModel/GetAllProductsResponse$Product$Dimensions.class
+com/dummyjson/testng/program/model/ResponseModel/GetAllProductsResponse$Product$Meta.class
+com/dummyjson/testng/program/model/ResponseModel/GetAllCartsResponse$Cart.class
+com/dummyjson/testng/program/model/ResponseModel/LoginResponse.class
+com/dummyjson/testng/program/Main.class
+com/dummyjson/testng/program/model/ResponseModel/UpdateACartResponse$Product.class

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-28T09:11:41 WIB" name="RestAssuredCucumberSuite" finished-at="2025-06-28T09:11:45 WIB" duration-ms="3763">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@5809fa26]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-06-28T09:11:41 WIB" name="RestAssuredCucumber" finished-at="2025-06-28T09:11:45 WIB" duration-ms="3763">
+      <class name="runners.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:41 WIB" name="setUpClass" finished-at="2025-06-28T09:11:41 WIB" duration-ms="210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3453cf27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:41 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T09:11:43 WIB" duration-ms="1548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Simulate adding a new cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Cart API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:43 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T09:11:43 WIB" duration-ms="470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Simulate deleting a cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update A Cart API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:43 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T09:11:44 WIB" duration-ms="304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Simulate fetching all carts"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get All Carts API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:44 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T09:11:44 WIB" duration-ms="333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate structure and contents of Get All Products response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get All Products API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:44 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T09:11:44 WIB" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Simulate successful login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:44 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T09:11:45 WIB" duration-ms="696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Simulate updating a cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update A Cart API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:45 WIB" name="tearDownClass" finished-at="2025-06-28T09:11:45 WIB" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="after_suite()[pri:0, instance:runners.CucumberRunner@5809fa26]" started-at="2025-06-28T09:11:50 WIB" name="after_suite" finished-at="2025-06-28T09:11:50 WIB" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_suite -->
+      </class> <!-- runners.CucumberRunner -->
+    </test> <!-- RestAssuredCucumber -->
+  </suite> <!-- RestAssuredCucumberSuite -->
+</testng-results>

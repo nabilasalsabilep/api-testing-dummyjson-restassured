@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="9.29" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/boot/plexus-classworlds-2.9.0.jar"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="maven.conf" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/conf"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@21/21.0.6/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DsuiteXml=restassured-cucumber_suite.xml"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest"/>
+    <property name="surefire.test.class.path" value="/Users/salsa/Documents/API Testing/restassured-test/target/test-classes:/Users/salsa/Documents/API Testing/restassured-test/target/classes:/Users/salsa/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/salsa/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/salsa/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/salsa/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/salsa/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/salsa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/salsa/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/salsa/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/salsa/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/salsa/.m2/repository/io/rest-assured/json-path/5.5.1/json-path-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/salsa/.m2/repository/io/rest-assured/rest-assured-common/5.5.1/rest-assured-common-5.5.1.jar:/Users/salsa/.m2/repository/io/rest-assured/xml-path/5.5.1/xml-path-5.5.1.jar:/Users/salsa/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar:/Users/salsa/.m2/repository/io/rest-assured/json-schema-validator/5.5.2/json-schema-validator-5.5.2.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/salsa/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/salsa/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/salsa/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/salsa/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/salsa/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/salsa/.m2/repository/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/Users/salsa/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/salsa/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/salsa/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/salsa/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/salsa/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-java/7.22.2/cucumber-java-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-core/7.22.2/cucumber-core-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-gherkin/7.22.2/cucumber-gherkin-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.22.2/cucumber-gherkin-messages-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/gherkin/32.1.1/gherkin-32.1.1.jar:/Users/salsa/.m2/repository/io/cucumber/messages/27.2.0/messages-27.2.0.jar:/Users/salsa/.m2/repository/io/cucumber/testng-xml-formatter/0.3.1/testng-xml-formatter-0.3.1.jar:/Users/salsa/.m2/repository/io/cucumber/query/13.3.0/query-13.3.0.jar:/Users/salsa/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/salsa/.m2/repository/io/cucumber/datatable/7.22.2/datatable-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-plugin/7.22.2/cucumber-plugin-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/docstring/7.22.2/docstring-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/html-formatter/21.10.1/html-formatter-21.10.1.jar:/Users/salsa/.m2/repository/io/cucumber/junit-xml-formatter/0.7.1/junit-xml-formatter-0.7.1.jar:/Users/salsa/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/salsa/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-testng/7.22.2/cucumber-testng-7.22.2.jar:/Users/salsa/.m2/repository/net/masterthought/cucumber-reporting/5.7.0/cucumber-reporting-5.7.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.0/jackson-datatype-jsr310-2.13.0.jar:/Users/salsa/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/salsa/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/salsa/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar:/Users/salsa/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/salsa/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/salsa/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/salsa/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/salsa/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/Users/salsa/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/salsa/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/salsa/.m2/repository/io/github/cdimascio/dotenv-java/3.0.0/dotenv-java-3.0.0.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-picocontainer/7.22.2/cucumber-picocontainer-7.22.2.jar:/Users/salsa/.m2/repository/org/picocontainer/picocontainer/2.15.2/picocontainer-2.15.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/salsa"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@21/21.0.6/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/salsa/Documents/API Testing/restassured-test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.6"/>
+    <property name="user.name" value="salsa"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/salsa/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="suiteXml" value="restassured-cucumber_suite.xml"/>
+    <property name="java.io.tmpdir" value="/var/folders/0h/063c3np959bbg7_4pknqdjfr0000gn/T/"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="/Users/salsa/Documents/API Testing/restassured-test"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/salsa/Documents/API Testing/restassured-test"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/salsa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="21.0.6"/>
+    <property name="classworlds.conf" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="library.jansi.path" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/lib/jansi-native"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Simulate adding a new cart&quot;, &quot;Add New Cart API&quot;](1)" classname="runners.CucumberRunner" time="1.548">
+    <system-out><![CDATA[
+Scenario: Simulate adding a new cart                                                                                                                       # src/test/resources/features/add_new_cart.feature:13
+  When Send a http "POST" request to "/auth/login" with body:                                                                                              # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {
+      "username": "emilys",
+      "password": "emilyspass"
+    }
+    """
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTEwNzY3MDIsImV4cCI6MTc1MTA4MDMwMn0.Uwk5A-2UhgGCEnKXqASgHGhka45dVB6G9VOeM1AyOQU
+  And Save the token from the response to local storage                                                                                                    # steps.LoginSteps.save_the_token()
+  Given Make sure token in local storage not empty                                                                                                         # steps.LoginSteps.assert_token_in_variable()
+  When Send a http "GET" request to "/products" with body:                                                                                                 # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {}
+    """
+  And Get first product & second product from the list of products                                                                                         # steps.GetAllProductsSteps.get_first_and_second_product_from_the_list()
+  When Send a http "POST" request to "/carts/add" with body:                                                                                               # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {
+      "userId": 1,
+      "products": [
+        {
+          "id": "{id1}",
+          "quantity": "{qty1}"
+        },
+        {
+          "id": "{id2}",
+          "quantity": "{qty2}"
+        }
+      ]
+    }
+    """
+  Then The response status must be 201                                                                                                                     # steps.LoginSteps.send_request_http(int)
+  And The response schema should be match with schema "schemas/add_new_cart_schema.json"                                                                   # steps.LoginSteps.schema_validation(java.lang.String)
+  And The user id in the response must be 1                                                                                                                # steps.AddNewCartSteps.assert_user_id(java.lang.Integer)
+  And Cart id in the response must be created                                                                                                              # steps.AddNewCartSteps.verify_cart_id_not_null()
+  And First product id in the response must be {id1}                                                                                                       # steps.AddNewCartSteps.assert_product_id_1()
+  And Title of the first product in the response must be the same as the title of the first product in the list                                            # steps.AddNewCartSteps.assert_product_title_1()
+  And Price of the first product in the response must be the same as the price of the first product in the list                                            # steps.AddNewCartSteps.assert_product_price_1()
+  And Quantity of the first product in the response must be {qty1}                                                                                         # steps.AddNewCartSteps.assert_quantity_1()
+  And Sub total of the first product must be equal to price of the first product that calculated with quantity of the first product                        # steps.AddNewCartSteps.assert_sub_total_1()
+  And Discount percentage of the first product in the response must be the equal as the discount percentage of the first product in the list, if present   # steps.AddNewCartSteps.assert_discount_percentage_1()
+  And Discounted price of the first product in the response must be equal to the calculated discounted price                                               # steps.AddNewCartSteps.assert_discounted_price_1()
+  And Second product id in the response must be {id2}                                                                                                      # steps.AddNewCartSteps.assert_product_id_2()
+  And Title of the second product in the response must be the same as the title of the second product in the list                                          # steps.AddNewCartSteps.assert_product_title_2()
+  And Price of the second product in the response must be the same as the price of the second product in the list                                          # steps.AddNewCartSteps.assert_product_price_2()
+  And Quantity of the second product in the response must be {qty2}                                                                                        # steps.AddNewCartSteps.assert_quantity_2()
+  And Sub total of the second product must be equal to price of the second product that calculated with quantity of the second product                     # steps.AddNewCartSteps.assert_sub_total_2()
+  And Discount percentage of the second product in the response must be the equal as the discount percentage of the second product in the list, if present # steps.AddNewCartSteps.assert_discount_percentage_2()
+  And Discounted price of the second product in the response must be equal to the calculated discounted price                                              # steps.AddNewCartSteps.assert_discounted_price_2()
+  And Total product in the response must be 2                                                                                                              # steps.AddNewCartSteps.assert_total_product(java.lang.Integer)
+  And Total discounted price in the response must be equal to the sum of the two discounted prices                                                         # steps.AddNewCartSteps.assert_total_discounted_price()
+  And Total quantity in the response must be equal to the sum of the quantities                                                                            # steps.AddNewCartSteps.assert_total_quantity()
+  And The Total in the response must be equal to the sum of the two product prices that calculated with quantity                                           # steps.AddNewCartSteps.assert_total()
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Simulate deleting a cart&quot;, &quot;Update A Cart API&quot;](2)" classname="runners.CucumberRunner" time="0.47">
+    <system-out><![CDATA[
+Scenario: Simulate deleting a cart                                                        # src/test/resources/features/delete_a_cart.feature:13
+  When Send a http "POST" request to "/auth/login" with body:                             # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {
+      "username": "emilys",
+      "password": "emilyspass"
+    }
+    """
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTEwNzY3MDMsImV4cCI6MTc1MTA4MDMwM30.R_UEGOcZHS2aab0ZFU4wGSoHQFEQjlZGSszhRcS7RHs
+  And Save the token from the response to local storage                                   # steps.LoginSteps.save_the_token()
+  Given Make sure token in local storage not empty                                        # steps.LoginSteps.assert_token_in_variable()
+  When Send a http "GET" request to "/carts" with body:                                   # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {}
+    """
+{
+  "id" : 1,
+  "products" : [ {
+    "id" : 168,
+    "title" : "Charger SXT RWD",
+    "price" : 32999.99,
+    "quantity" : 3,
+    "total" : 98999.97,
+    "discountPercentage" : 13.39,
+    "discountedTotal" : 85743.87,
+    "thumbnail" : "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
+  }, {
+    "id" : 78,
+    "title" : "Apple MacBook Pro 14 Inch Space Grey",
+    "price" : 1999.99,
+    "quantity" : 2,
+    "total" : 3999.98,
+    "discountPercentage" : 18.52,
+    "discountedTotal" : 3259.18,
+    "thumbnail" : "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+  }, {
+    "id" : 183,
+    "title" : "Green Oval Earring",
+    "price" : 24.99,
+    "quantity" : 5,
+    "total" : 124.94999999999999,
+    "discountPercentage" : 6.28,
+    "discountedTotal" : 117.1,
+    "thumbnail" : "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Oval%20Earring/thumbnail.png"
+  }, {
+    "id" : 100,
+    "title" : "Apple Airpods",
+    "price" : 129.99,
+    "quantity" : 5,
+    "total" : 649.95,
+    "discountPercentage" : 12.84,
+    "discountedTotal" : 566.5,
+    "thumbnail" : "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png"
+  } ],
+  "total" : 103774.85,
+  "discountedTotal" : 89686.65,
+  "userId" : 33,
+  "totalProducts" : 4,
+  "totalQuantity" : 15
+}
+  And Get first cart from the list of carts                                               # steps.GetAllCartsSteps.get_first_cart()
+  When Send a http "DELETE" request to "/carts/{cartId}" with body:                       # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {}
+    """
+  Then The response status must be 200                                                    # steps.LoginSteps.send_request_http(int)
+  And The response schema should be match with schema "schemas/delete_a_cart_schema.json" # steps.LoginSteps.schema_validation(java.lang.String)
+  And The "isDeleted" field in the response must be true                                  # steps.DeleteACartSteps.assert_is_deleted_true()
+Cart with id 1 has been successfully deleted
+  And The "deletedOn" field in the response must not be null                              # steps.DeleteACartSteps.assert_deleted_on_not_null()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Simulate fetching all carts&quot;, &quot;Get All Carts API&quot;](3)" classname="runners.CucumberRunner" time="0.304">
+    <system-out><![CDATA[
+Scenario: Simulate fetching all carts                                                      # src/test/resources/features/get_all_carts.feature:13
+  When Send a http "POST" request to "/auth/login" with body:                              # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {
+      "username": "emilys",
+      "password": "emilyspass"
+    }
+    """
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTEwNzY3MDQsImV4cCI6MTc1MTA4MDMwNH0.KPo7T3pcNxjXrGTMb3ADh7MEKeShHaEvnHDoi6v8L9o
+  And Save the token from the response to local storage                                    # steps.LoginSteps.save_the_token()
+  When Send a http "GET" request to "/carts" with body:                                    # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {}
+    """
+  Then The response status must be 200                                                     # steps.LoginSteps.send_request_http(int)
+  And The response schema should be match with schema "schemas/get_all_carts_schema.json"  # steps.LoginSteps.schema_validation(java.lang.String)
+  And Total carts in the response should be more than or equal to 0                        # steps.GetAllCartsSteps.verify_total_carts_more_than_zero()
+  And Each cart should contain userId, products, total, discountedTotal, and totalQuantity # steps.GetAllCartsSteps.verify_cart_contents()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate structure and contents of Get All Products response&quot;, &quot;Get All Products API&quot;](4)" classname="runners.CucumberRunner" time="0.333">
+    <system-out><![CDATA[
+Scenario: Validate structure and contents of Get All Products response                       # src/test/resources/features/get_all_products.feature:13
+  When Send a http "POST" request to "/auth/login" with body:                                # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {
+      "username": "emilys",
+      "password": "emilyspass"
+    }
+    """
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTEwNzY3MDQsImV4cCI6MTc1MTA4MDMwNH0.KPo7T3pcNxjXrGTMb3ADh7MEKeShHaEvnHDoi6v8L9o
+  And Save the token from the response to local storage                                      # steps.LoginSteps.save_the_token()
+  When Send a http "GET" request to "/products" with body:                                   # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {}
+    """
+  Then The response status must be 200                                                       # steps.LoginSteps.send_request_http(int)
+  And The response schema should be match with schema "schemas/get_all_products_schema.json" # steps.LoginSteps.schema_validation(java.lang.String)
+  And The total number of products must be more than 0                                       # steps.GetAllProductsSteps.verify_total_number_of_products_more_than_zero()
+  And Each product in the response must contain id, title, price, and minimumOrderQuantity   # steps.GetAllProductsSteps.verify_product_contents()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Simulate successful login&quot;, &quot;Login API&quot;](5)" classname="runners.CucumberRunner" time="0.152">
+    <system-out><![CDATA[
+Scenario: Simulate successful login                                               # src/test/resources/features/login.feature:3
+  When Send a http "POST" request to "/auth/login" with body:                     # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {
+      "username": "emilys",
+      "password": "emilyspass"
+    }
+    """
+  Then The response status must be 200                                            # steps.LoginSteps.send_request_http(int)
+  And The response schema should be match with schema "schemas/login_schema.json" # steps.LoginSteps.schema_validation(java.lang.String)
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTEwNzY3MDQsImV4cCI6MTc1MTA4MDMwNH0.KPo7T3pcNxjXrGTMb3ADh7MEKeShHaEvnHDoi6v8L9o
+  And Save the token from the response to local storage                           # steps.LoginSteps.save_the_token()
+  And Username in the response must be "emilys"                                   # steps.LoginSteps.assert_username(java.lang.String)
+  And Email in the response must be "emily.johnson@x.dummyjson.com"               # steps.LoginSteps.assert_email(java.lang.String)
+  And First name in the response must be "Emily"                                  # steps.LoginSteps.assert_firstName(java.lang.String)
+  And Last name in the response must be "Johnson"                                 # steps.LoginSteps.assert_lastName(java.lang.String)
+  And Gender in the response must be "female"                                     # steps.LoginSteps.assert_gender(java.lang.String)
+  And Image url in the response must be "https://dummyjson.com/icon/emilys/128"   # steps.LoginSteps.assert_imageUrl(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Simulate updating a cart&quot;, &quot;Update A Cart API&quot;](6)" classname="runners.CucumberRunner" time="0.696">
+    <system-out><![CDATA[
+Scenario: Simulate updating a cart                                                                                                            # src/test/resources/features/update_a_cart.feature:13
+  When Send a http "POST" request to "/auth/login" with body:                                                                                 # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {
+      "username": "emilys",
+      "password": "emilyspass"
+    }
+    """
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTEwNzY3MDQsImV4cCI6MTc1MTA4MDMwNH0.KPo7T3pcNxjXrGTMb3ADh7MEKeShHaEvnHDoi6v8L9o
+  And Save the token from the response to local storage                                                                                       # steps.LoginSteps.save_the_token()
+  Given Make sure token in local storage not empty                                                                                            # steps.LoginSteps.assert_token_in_variable()
+  When Send a http "GET" request to "/carts" with body:                                                                                       # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {}
+    """
+{
+  "id" : 1,
+  "products" : [ {
+    "id" : 168,
+    "title" : "Charger SXT RWD",
+    "price" : 32999.99,
+    "quantity" : 3,
+    "total" : 98999.97,
+    "discountPercentage" : 13.39,
+    "discountedTotal" : 85743.87,
+    "thumbnail" : "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
+  }, {
+    "id" : 78,
+    "title" : "Apple MacBook Pro 14 Inch Space Grey",
+    "price" : 1999.99,
+    "quantity" : 2,
+    "total" : 3999.98,
+    "discountPercentage" : 18.52,
+    "discountedTotal" : 3259.18,
+    "thumbnail" : "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+  }, {
+    "id" : 183,
+    "title" : "Green Oval Earring",
+    "price" : 24.99,
+    "quantity" : 5,
+    "total" : 124.94999999999999,
+    "discountPercentage" : 6.28,
+    "discountedTotal" : 117.1,
+    "thumbnail" : "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Oval%20Earring/thumbnail.png"
+  }, {
+    "id" : 100,
+    "title" : "Apple Airpods",
+    "price" : 129.99,
+    "quantity" : 5,
+    "total" : 649.95,
+    "discountPercentage" : 12.84,
+    "discountedTotal" : 566.5,
+    "thumbnail" : "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png"
+  } ],
+  "total" : 103774.85,
+  "discountedTotal" : 89686.65,
+  "userId" : 33,
+  "totalProducts" : 4,
+  "totalQuantity" : 15
+}
+  And Get first cart from the list of carts                                                                                                   # steps.GetAllCartsSteps.get_first_cart()
+  When Send a http "PUT" request to "/carts/{cartId}" with body:                                                                              # steps.LoginSteps.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {
+      "userId": 1,
+      "merge": false,
+      "products": [
+        {
+          "id": "{productId1}",
+          "quantity": "{productQty1}"
+        },
+        {
+          "id": "{productId2}",
+          "quantity": "{productQty2}"
+        }
+      ]
+    }
+    """
+  Then The response status must be 200                                                                                                        # steps.LoginSteps.send_request_http(int)
+  And The response schema should be match with schema "schemas/update_a_cart_schema.json"                                                     # steps.LoginSteps.schema_validation(java.lang.String)
+  And The user id in the response must be 1                                                                                                   # steps.AddNewCartSteps.assert_user_id(java.lang.Integer)
+  And Cart id in the response must be {cartId}                                                                                                # steps.UpdateACartSteps.assert_cart_id()
+  And Product id in the response must be the same as first and second product id                                                              # steps.UpdateACartSteps.assert_product_ids()
+{
+    "id": 1,
+    "products": [
+        {
+            "id": 168,
+            "title": "Charger SXT RWD",
+            "price": 32999.99,
+            "quantity": 8,
+            "total": 263999.92,
+            "discountPercentage": 8.23,
+            "discountedPrice": 242273,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp"
+        },
+        {
+            "id": 78,
+            "title": "Apple MacBook Pro 14 Inch Space Grey",
+            "price": 1999.99,
+            "quantity": 12,
+            "total": 23999.88,
+            "discountPercentage": 4.69,
+            "discountedPrice": 22874,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp"
+        }
+    ],
+    "total": 287999.8,
+    "discountedTotal": 265147,
+    "userId": 1,
+    "totalProducts": 2,
+    "totalQuantity": 20
+}
+  And Product titles of the first product in the response must not be changed                                                                 # steps.UpdateACartSteps.assert_product_titles()
+  And Product prices in the response must not be changed                                                                                      # steps.UpdateACartSteps.asser_product_prices()
+  And Product quantities in the response must be the same as first and second product quantities                                              # steps.UpdateACartSteps.assert_each_product_quantity()
+  And Total of each product must be equal to price multiplied by quantity                                                                     # steps.UpdateACartSteps.assert_total_of_each_product()
+  And Discount percentage of each product must be equal to the calculation between the discounted price and the product sub-total, if present # steps.UpdateACartSteps.assert_discount_percentage()
+  And Discounted price of each product must be equal to calculated discounted total                                                           # steps.UpdateACartSteps.assert_product_discounted_prices()
+  And Total number of products in the response must be 2                                                                                      # steps.UpdateACartSteps.assert_total_number_of_products(java.lang.Integer)
+  And Total quantity in the response must be equal to the sum of all product quantities                                                       # steps.UpdateACartSteps.assert_total_quantity_after_updated_cart()
+  And The Total in the response must be equal to the sum of all product subtotals                                                             # steps.UpdateACartSteps.assert_total()
+  And Total discounted price in the response must be equal to the sum of all product discounted prices                                        # steps.UpdateACartSteps.assert_total_discounted_price()
+]]></system-out>
+  </testcase>
+</testsuite>

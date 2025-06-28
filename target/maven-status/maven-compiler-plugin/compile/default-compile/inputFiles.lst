@@ -1,0 +1,7 @@
+/Users/salsa/Documents/API Testing/restassured-test/src/main/java/com/dummyjson/testng/program/Main.java
+/Users/salsa/Documents/API Testing/restassured-test/src/main/java/com/dummyjson/testng/program/model/ResponseModel/AddNewCartResponse.java
+/Users/salsa/Documents/API Testing/restassured-test/src/main/java/com/dummyjson/testng/program/model/ResponseModel/DeleteACartResponse.java
+/Users/salsa/Documents/API Testing/restassured-test/src/main/java/com/dummyjson/testng/program/model/ResponseModel/GetAllCartsResponse.java
+/Users/salsa/Documents/API Testing/restassured-test/src/main/java/com/dummyjson/testng/program/model/ResponseModel/GetAllProductsResponse.java
+/Users/salsa/Documents/API Testing/restassured-test/src/main/java/com/dummyjson/testng/program/model/ResponseModel/LoginResponse.java
+/Users/salsa/Documents/API Testing/restassured-test/src/main/java/com/dummyjson/testng/program/model/ResponseModel/UpdateACartResponse.java
